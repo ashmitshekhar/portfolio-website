@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: #3d52a0;
+    background-color: #7091e6;
     color: white;
     font-family: "Poppins", serif;
 }
@@ -16,7 +16,7 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 height: 100px;
-background-color: #7091e6;
+background-color: #3d52a0;
 }
 
 nav ul{
@@ -30,7 +30,23 @@ nav ul li {
     margin: 0 23px;
 
 }
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
 
+nav ul li a:hover{
+    color: #7091e6;
+    font-size: 1.05rem;
+}
+
+main hr {
+    border: 0;
+    background:rgb(12, 10, 130) ;
+    height: 0.2rem;
+    margin: 40px 84px;
+    border-radius: 50%;
+}
 .left{
     font-size: 1.5rem;
 }
@@ -39,10 +55,12 @@ nav ul li {
 .firstSection{
     display: flex;
     justify-content: space-around;
-    margin: 23px 0;
+    align-items: center;
+    margin: 110px 0 ;
+    
 }
 
-.firstSection div{
+.firstSection > div{
     width: 30%;
 
 }
@@ -50,6 +68,7 @@ nav ul li {
 .leftSection{
 
     font-size: 3rem;
+    margin: 70px 0 ;
  
 }
 
@@ -57,4 +76,18 @@ nav ul li {
 
     margin: 40px 0 ;
 
+}
+
+.colored-name {
+    color: rgb(12, 10, 130);
+}
+
+
+#element{
+    color: rgb(12, 10, 130);
+}
+
+.secondSection{
+    max-width: 80vw;
+    margin: auto;
 }

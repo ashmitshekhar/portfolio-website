@@ -15,18 +15,21 @@
             <div class="left">Ashmit's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Project</li>
-                    <li>Contact Me </li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Project</a></li>
+                    <li><a href="">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
         <main>
             <section>
                 <div class="firstSection">
-                    <div class="leftSection">Hi, I am Ashmit Shekhar
-                        <div>and I am a Web Developer </div>
+                    <div class="leftSection">Hi, I am <span class="colored-name">Ashmit Shekhar</span>
+                        <div>and I am a passionate </div>
+                        
+                        <span id="element"></span>
+
                     </div>
                 <div class="rightSection">
 
@@ -37,8 +40,19 @@
                 </div>
                 
             </section>
+            <hr>
+            <section class="secondSection">
+                <h1>Past Experience</h1>
+            </section>
         </main>
     </header>
-    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer !'],
+          typeSpeed: 50,
+        });
+      </script>
 </body>
 </html>

@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: #7091e6;
+    background-color: #3d52a0;
     color: white;
     font-family: "Poppins", serif;
 }
@@ -16,7 +16,7 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 height: 100px;
-background-color: #3d52a0;
+background-color: #7091e6;
 }
 
 nav ul{
@@ -39,4 +39,22 @@ nav ul li {
 .firstSection{
     display: flex;
     justify-content: space-around;
+    margin: 23px 0;
+}
+
+.firstSection div{
+    width: 30%;
+
+}
+
+.leftSection{
+
+    font-size: 3rem;
+ 
+}
+
+.rightSection img{
+
+    margin: 40px 0 ;
+
 }

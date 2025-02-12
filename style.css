@@ -56,7 +56,7 @@ main hr {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 110px 0 ;
+    margin: 30px 0 ;
     
 }
 
@@ -74,7 +74,10 @@ main hr {
 
 .rightSection img{
 
+    height: 450px;
     margin: 40px 0 ;
+    border-radius: 15%;
+    
 
 }
 

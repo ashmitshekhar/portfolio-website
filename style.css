@@ -7,6 +7,8 @@ body{
     background-color: #7091e6;
     color: white;
     font-family: "Poppins", serif;
+    background-image: url('bg\ img.jpg');
+    background-size: cover;
 }
 
 
@@ -16,7 +18,9 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 height: 100px;
-background-color: #3d52a0;
+background-color: rgba(255, 255,255 , 0.3);
+
+
 }
 
 nav ul{
@@ -42,7 +46,7 @@ nav ul li a:hover{
 
 main hr {
     border: 0;
-    background:rgb(12, 10, 130) ;
+    background:#ede8f5;
     height: 0.2rem;
     margin: 40px 84px;
     border-radius: 50%;
@@ -56,7 +60,9 @@ main hr {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 30px 0 ;
+    margin: 0px 0 ;
+  
+    background-size: cover;
     
 }
 
@@ -76,21 +82,30 @@ main hr {
 
     height: 450px;
     margin: 40px 0 ;
-    border-radius: 15%;
+    border-radius: 50%;
     
 
 }
 
 .colored-name {
-    color: rgb(12, 10, 130);
+    color: #ede8f5;
 }
 
 
 #element{
-    color: rgb(12, 10, 130);
+    color: #ede8f5;
 }
 
 .secondSection{
     max-width: 80vw;
     margin: auto;
+    height: 100vh;
+}
+
+.secondSection h1{
+    font-size: 2rem;
+}
+
+.text-gray{
+    color: #ede8f5;
 }

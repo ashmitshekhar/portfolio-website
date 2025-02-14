@@ -156,3 +156,10 @@ main hr {
     font-size: 2rem;
   }
    
+  .skill-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: -60px 0;
+    flex-wrap: wrap;
+  }

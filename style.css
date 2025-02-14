@@ -99,7 +99,7 @@ main hr {
 .secondSection{
     max-width: 80vw;
     margin: auto;
-    height: 100vh;
+    height: 80vh;
 }
 
 .secondSection h1{
@@ -114,13 +114,14 @@ main hr {
 }
 
 .card {
-    margin: 70px 0;
+    margin: 65px 0;
     width: 270px;
     height: 400px;
     background: white;
     border-radius: 10px;
     transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     background-color: rgba(255, 255,255 , 0.3);
+    transition: transform 0.2s ease;
    
     
    
@@ -133,11 +134,25 @@ main hr {
                 0.3em 0.3em 1em rgba(0,0,0,0.3);
    }
 
-   .text1{
+   .text{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 40px;
+    margin: 30px;
    }
-   
+
+  .card:hover{
+    transform: scale(1.05);
+    
+  }
+
+  .thirdSection{
+    max-width: 80vw;
+    margin: auto;
+    height: 100vh;
+  }
+
+  .thirdSection h1{
+    font-size: 2rem;
+  }
    

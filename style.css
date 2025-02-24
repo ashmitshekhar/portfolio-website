@@ -129,7 +129,7 @@ main hr {
 
 
 .card .icon {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: #e5be9e;
     display: block;
     text-align: center;
@@ -179,3 +179,18 @@ main hr {
     margin-right: -60px 0;
     flex-wrap: wrap;
   }
+
+  .skill-cards .card {
+    height: 200px;  /* Reduced height for skill cards */
+    width: 250px;   /* Adjusted width */
+    margin: 20px;   /* Added margin for spacing */
+}
+
+.skill-cards .text {
+    font-size: 0.7rem;  /* Smaller font size for skill descriptions */
+    padding: 0 15px;    /* Added padding for text */
+}
+
+.skill-cards .icon {
+    margin: 15px 0;     /* Adjusted margin for icons */
+}

@@ -4,8 +4,8 @@
 }
 
 body{
-    background-color: #361d2e;
-    color: #e5be9e;
+    background-color: black;
+    color: white;
     font-family: "Poppins", serif;
   
     background-size: cover;
@@ -18,7 +18,7 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 height: 100px;
-background-color: rgba(0,0,0,0.3);
+background-color: rgb(39, 37, 37);
 
 
 }
@@ -46,9 +46,9 @@ nav ul li a:hover{
 
 main hr {
     border: 0;
-    background:#ede8f5;
+    background: #ede8f5;
     height: 0.2rem;
-    margin: 40px 84px;
+    margin: 120px 84px;  /* Increased top and bottom margin */
     border-radius: 50%;
 }
 .left{
@@ -89,29 +89,35 @@ main hr {
 }
 
 .colored-name {
-    color: #86a397;
+    color: #c133d4;
 }
 
 
 #element{
-    color: #86a397;
+    color: #c133d4;
 }
 
 .secondSection{
     max-width: 80vw;
     margin: auto;
-    height: 80vh;
+    min-height: 100vh;  /* Changed from fixed height to min-height */
+    padding: 40px 0;  
 }
 
 .secondSection h1{
     font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .about-cards{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-right: -60px 0;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    
 }
 
 .card {
@@ -121,16 +127,17 @@ main hr {
     background: white;
     border-radius: 10px;
     transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    background-color: rgb(54, 29, 46, 0.3);
-    transition: transform 0.2s ease;
-    box-shadow: 0 0 500px #86a397; 
-
+    background-color:black;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px #c133d4; /* Adding subtle initial glow */
 }
+
+
 
 
 .card .icon {
     font-size: 2.3rem;
-    color: #e5be9e;
+    color: white;
     display: block;
     text-align: center;
     margin: 20px 0;
@@ -139,6 +146,7 @@ main hr {
 
 .card:hover .icon {
     transform: scale(1.2);
+    color: #c133d4;
 }
 
   
@@ -157,7 +165,8 @@ main hr {
 
   .card:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 20px #e5be9e;
+    box-shadow: 0 0 20px #c133d4;
+    color: #c133d4;
     
     
   }
@@ -165,19 +174,23 @@ main hr {
   .thirdSection{
     max-width: 80vw;
     margin: auto;
-    height: 100vh;
+    min-height: 100vh;  /* Changed from fixed height to min-height */
+    padding: 40px 0;  
   }
 
   .thirdSection h1{
     font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
   }
    
   .skill-cards{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-right: -60px 0;
+    justify-content: center;
+    gap: 30px;
     flex-wrap: wrap;
+    padding: 0 20px;
   }
 
   .skill-cards .card {
@@ -193,4 +206,92 @@ main hr {
 
 .skill-cards .icon {
     margin: 15px 0;     /* Adjusted margin for icons */
+}
+
+
+.fourthSection {
+    max-width: 80vw;
+    margin: auto;
+    min-height: 100vh;  /* Changed from fixed height to min-height */
+    padding: 40px 0;  
+}
+
+.fourthSection h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.project-cards .card {
+    height: 570px;
+    width: 300px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-cards .card img {
+    margin: 23px 0;
+    
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+   
+    
+}
+
+.project-cards .text {
+    font-size: 1rem;
+    
+}
+
+.project-cards p {
+    font-size: 4rem;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 0 15px;
+}
+
+.tech-stack span {
+    background: #c133d4;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+}
+
+.project-links {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.project-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 1px solid #c133d4;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    flex: 1;
+    text-align: center;
+}
+
+.project-links a:hover {
+    background: #c133d4;
 }

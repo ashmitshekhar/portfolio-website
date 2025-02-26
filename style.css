@@ -57,35 +57,78 @@ main hr {
 }
 
 
-.firstSection{
+.firstSection {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Changed from space-around */
     align-items: center;
-    margin: 0px 0 ;
-  
+    margin: 0px 80px; /* Added horizontal margin */
+    height: 100vh; /* Added fixed height */
     background-size: cover;
-    
 }
 
-.firstSection > div{
-    width: 30%;
-
+.firstSection > div {
+    width: 45%; /* Increased width from 30% */
 }
 
-.leftSection{
-
+.leftSection {
     font-size: 3rem;
-    margin: 70px 0 ;
- 
+    margin: 70px 0;
+    width: 50%;
 }
 
-.rightSection img{
 
+
+.resume-btn {
+    margin-top: 30px;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #c133d4;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #c133d4;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #c133d4;
+}
+
+.download-btn i {
+    font-size: 1.2rem;
+}
+
+
+
+
+.rightSection {
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    align-items: center;
+  
+}
+
+.rightSection img {
     height: 450px;
-    margin: 40px 0 ;
+    width: 450px;
     border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(193, 51, 212, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     
+}
 
+.rightSection img:hover {
+    transform: scale(1.02);  /* Slight scale up on hover */
+    box-shadow: 0 0 30px rgba(193, 51, 212, 0.5);  /* Enhanced glow on hover */
 }
 
 .colored-name {

@@ -36,6 +36,7 @@ nav{
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 
 
+
 }
 
 
@@ -195,6 +196,8 @@ main hr {
     background-color:black;
     transition: all 0.3s ease;
     box-shadow: 0 0 20px #c133d4; /* Adding subtle initial glow */
+
+   
 }
 
 
@@ -213,6 +216,8 @@ main hr {
     transform: scale(1.2);
     color: #c133d4;
 }
+
+
 
   
    .shadow {
@@ -568,8 +573,3 @@ main hr {
 
 
 
-/* Add some padding-top to sections to account for fixed navbar */
-section {
-    padding-top: 100px;
-    margin-top: -100px;
-}

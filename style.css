@@ -11,37 +11,77 @@ body{
     background-size: cover;
 }
 
+main {
+    padding-top: 80px;
+}
+
+/* Enable smooth scrolling */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
 
 nav{
 
-display: flex;
-justify-content: space-around;
-align-items: center;
-height: 100px;
-background-color: rgb(39, 37, 37);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(39, 37, 37);
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 
 
 }
 
+
 nav ul{
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 30px;
 
 }
 
 nav ul li {
     list-style: none;
-    margin: 0 23px;
+   
 
 }
 nav ul li a {
     text-decoration: none;
     color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 5px;
 }
 
 nav ul li a:hover{
     
-    font-size: 1.05rem;
+    color: #c133d4;
+    background-color: rgba(193, 51, 212, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 5px;
+    }
 }
 
 main hr {
@@ -62,7 +102,7 @@ main hr {
     justify-content: center; /* Changed from space-between since we're removing the right section */
     align-items: flex-start;
     margin: 0px 80px;
-    height: 100vh;
+    height: 60vh;
     padding-top: 40px;
 }
 
@@ -288,6 +328,7 @@ main hr {
     flex-wrap: wrap;
     gap: 5px;
     padding: 0 15px;
+    color: white;
 }
 
 .tech-stack span {
@@ -401,7 +442,7 @@ main hr {
 .contact-container {
     max-width: 600px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 60px;
     background-color: rgb(39, 37, 37);
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(193, 51, 212, 0.3);
@@ -523,4 +564,12 @@ main hr {
 
 .footer-bottom p {
     margin: 10px 0;
+}
+
+
+
+/* Add some padding-top to sections to account for fixed navbar */
+section {
+    padding-top: 100px;
+    margin-top: -100px;
 }
